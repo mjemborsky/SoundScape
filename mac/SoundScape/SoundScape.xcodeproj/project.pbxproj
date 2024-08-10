@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C338D46229A7D485009279AE /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338D46129A7D485009279AE /* Preset.swift */; };
+		C338D46429A7D4DA009279AE /* AudioSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338D46329A7D4DA009279AE /* AudioSource.swift */; };
+		C3CDE19F299F3C7A0089DEC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE19E299F3C7A0089DEC0 /* ContentView.swift */; };
+		C3CDE1A3299F3C7A0089DEC0 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1A2299F3C7A0089DEC0 /* ViewControllerRepresentable.swift */; };
+		C3CDE1A6299F3C7A0089DEC0 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1A5299F3C7A0089DEC0 /* Synth.aif */; };
+		C3CDE1A8299F3C7A0089DEC0 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1A7299F3C7A0089DEC0 /* SimplePlayEngine.swift */; };
+		C3CDE1AB299F3C7A0089DEC0 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1AA299F3C7A0089DEC0 /* MIDIManager.swift */; };
+		C3CDE1AD299F3C7A0089DEC0 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1AC299F3C7A0089DEC0 /* TypeAliases.swift */; };
+		C3CDE1B0299F3C7A0089DEC0 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1AF299F3C7A0089DEC0 /* StringHelpers.swift */; };
+		C3CDE1B3299F3C7A0089DEC0 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1B2299F3C7A0089DEC0 /* AudioUnitHostModel.swift */; };
+		C3CDE1B5299F3C7A0089DEC0 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1B4299F3C7A0089DEC0 /* AudioUnitViewModel.swift */; };
+		C3CDE1B7299F3C7A0089DEC0 /* SoundScapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1B6299F3C7A0089DEC0 /* SoundScapeApp.swift */; };
+		C3CDE1BA299F3C7A0089DEC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1B9299F3C7A0089DEC0 /* Preview Assets.xcassets */; };
+		C3CDE1BC299F3C7D0089DEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1BB299F3C7D0089DEC0 /* Assets.xcassets */; };
+		C3CDE1C7299F3C7E0089DEC0 /* SoundScapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1C6299F3C7E0089DEC0 /* SoundScapeTests.swift */; };
+		C3CDE1D1299F3C7E0089DEC0 /* SoundScapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1D0299F3C7E0089DEC0 /* SoundScapeUITests.swift */; };
+		C3CDE1D3299F3C7E0089DEC0 /* SoundScapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1D2299F3C7E0089DEC0 /* SoundScapeUITestsLaunchTests.swift */; };
+		C3CDE1D9299F3C7E0089DEC0 /* SoundScapeExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C3CDE1D8299F3C7E0089DEC0 /* SoundScapeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3CDE1DE299F3C7E0089DEC0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1DD299F3C7E0089DEC0 /* README.md */; };
+		C3CDE1E3299F3C7E0089DEC0 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1E2299F3C7E0089DEC0 /* ParameterSpecBase.swift */; };
+		C3CDE1E6299F3C7E0089DEC0 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1E5299F3C7E0089DEC0 /* CrossPlatform.swift */; };
+		C3CDE1E8299F3C7E0089DEC0 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1E7299F3C7E0089DEC0 /* String+Utils.swift */; };
+		C3CDE1EC299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1EB299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.mm */; };
+		C3CDE1EF299F3C7E0089DEC0 /* SoundScapeExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1EE299F3C7E0089DEC0 /* SoundScapeExtensionAUProcessHelper.hpp */; };
+		C3CDE1F1299F3C7E0089DEC0 /* SoundScapeExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1F0299F3C7E0089DEC0 /* SoundScapeExtensionBufferedAudioBus.hpp */; };
+		C3CDE1F5299F3C7E0089DEC0 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1F4299F3C7E0089DEC0 /* Parameters.swift */; };
+		C3CDE1F8299F3C7E0089DEC0 /* SoundScapeExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE1F7299F3C7E0089DEC0 /* SoundScapeExtensionDSPKernel.hpp */; };
+		C3CDE1FB299F3C7E0089DEC0 /* SoundScapeExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1FA299F3C7E0089DEC0 /* SoundScapeExtensionMainView.swift */; };
+		C3CDE1FD299F3C7E0089DEC0 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE1FC299F3C7E0089DEC0 /* ParameterSlider.swift */; };
+		C3CDE202299F3C7E0089DEC0 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CDE200299F3C7E0089DEC0 /* AudioUnitViewController.xib */; };
+		C3CDE204299F3C7E0089DEC0 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE203299F3C7E0089DEC0 /* ObservableAUParameter.swift */; };
+		C3CDE206299F3C7E0089DEC0 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CDE205299F3C7E0089DEC0 /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3CDE1C3299F3C7E0089DEC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CDE193299F3C7A0089DEC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CDE19A299F3C7A0089DEC0;
+			remoteInfo = SoundScape;
+		};
+		C3CDE1CD299F3C7E0089DEC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CDE193299F3C7A0089DEC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CDE19A299F3C7A0089DEC0;
+			remoteInfo = SoundScape;
+		};
+		C3CDE1DA299F3C7E0089DEC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CDE193299F3C7A0089DEC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CDE1D7299F3C7E0089DEC0;
+			remoteInfo = SoundScapeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3CDE20D299F3C7E0089DEC0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3CDE1D9299F3C7E0089DEC0 /* SoundScapeExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C338D46129A7D485009279AE /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		C338D46329A7D4DA009279AE /* AudioSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSource.swift; sourceTree = "<group>"; };
+		C3CDE19B299F3C7A0089DEC0 /* SoundScape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundScape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CDE19E299F3C7A0089DEC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3CDE1A2299F3C7A0089DEC0 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		C3CDE1A5299F3C7A0089DEC0 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		C3CDE1A7299F3C7A0089DEC0 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		C3CDE1AA299F3C7A0089DEC0 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		C3CDE1AC299F3C7A0089DEC0 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		C3CDE1AF299F3C7A0089DEC0 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		C3CDE1B2299F3C7A0089DEC0 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		C3CDE1B4299F3C7A0089DEC0 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		C3CDE1B6299F3C7A0089DEC0 /* SoundScapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundScapeApp.swift; sourceTree = "<group>"; };
+		C3CDE1B9299F3C7A0089DEC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3CDE1BB299F3C7D0089DEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3CDE1BD299F3C7D0089DEC0 /* SoundScape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundScape.entitlements; sourceTree = "<group>"; };
+		C3CDE1C2299F3C7E0089DEC0 /* SoundScapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundScapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CDE1C6299F3C7E0089DEC0 /* SoundScapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundScapeTests.swift; sourceTree = "<group>"; };
+		C3CDE1CC299F3C7E0089DEC0 /* SoundScapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundScapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CDE1D0299F3C7E0089DEC0 /* SoundScapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundScapeUITests.swift; sourceTree = "<group>"; };
+		C3CDE1D2299F3C7E0089DEC0 /* SoundScapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundScapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3CDE1D8299F3C7E0089DEC0 /* SoundScapeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoundScapeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CDE1DD299F3C7E0089DEC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C3CDE1E0299F3C7E0089DEC0 /* SoundScapeExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundScapeExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3CDE1E2299F3C7E0089DEC0 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		C3CDE1E5299F3C7E0089DEC0 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		C3CDE1E7299F3C7E0089DEC0 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		C3CDE1EA299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundScapeExtensionAudioUnit.h; sourceTree = "<group>"; };
+		C3CDE1EB299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SoundScapeExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		C3CDE1EE299F3C7E0089DEC0 /* SoundScapeExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SoundScapeExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		C3CDE1F0299F3C7E0089DEC0 /* SoundScapeExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SoundScapeExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		C3CDE1F3299F3C7E0089DEC0 /* SoundScapeExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundScapeExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		C3CDE1F4299F3C7E0089DEC0 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		C3CDE1F7299F3C7E0089DEC0 /* SoundScapeExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SoundScapeExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		C3CDE1FA299F3C7E0089DEC0 /* SoundScapeExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundScapeExtensionMainView.swift; sourceTree = "<group>"; };
+		C3CDE1FC299F3C7E0089DEC0 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		C3CDE201299F3C7E0089DEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		C3CDE203299F3C7E0089DEC0 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		C3CDE205299F3C7E0089DEC0 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		C3CDE207299F3C7E0089DEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CDE198299F3C7A0089DEC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1BF299F3C7E0089DEC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1C9299F3C7E0089DEC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1D5299F3C7E0089DEC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3CDE192299F3C7A0089DEC0 = {
+			isa = PBXGroup;
+			children = (
+				C3CDE19D299F3C7A0089DEC0 /* SoundScape */,
+				C3CDE1C5299F3C7E0089DEC0 /* SoundScapeTests */,
+				C3CDE1CF299F3C7E0089DEC0 /* SoundScapeUITests */,
+				C3CDE1DC299F3C7E0089DEC0 /* SoundScapeExtension */,
+				C3CDE19C299F3C7A0089DEC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CDE19C299F3C7A0089DEC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE19B299F3C7A0089DEC0 /* SoundScape.app */,
+				C3CDE1C2299F3C7E0089DEC0 /* SoundScapeTests.xctest */,
+				C3CDE1CC299F3C7E0089DEC0 /* SoundScapeUITests.xctest */,
+				C3CDE1D8299F3C7E0089DEC0 /* SoundScapeExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CDE19D299F3C7A0089DEC0 /* SoundScape */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE19E299F3C7A0089DEC0 /* ContentView.swift */,
+				C3CDE1B6299F3C7A0089DEC0 /* SoundScapeApp.swift */,
+				C338D46129A7D485009279AE /* Preset.swift */,
+				C338D46329A7D4DA009279AE /* AudioSource.swift */,
+				C3CDE1BB299F3C7D0089DEC0 /* Assets.xcassets */,
+				C3CDE1BD299F3C7D0089DEC0 /* SoundScape.entitlements */,
+				C3CDE1A0299F3C7A0089DEC0 /* Common */,
+				C3CDE1B1299F3C7A0089DEC0 /* Model */,
+				C3CDE1B8299F3C7A0089DEC0 /* Preview Content */,
+			);
+			path = SoundScape;
+			sourceTree = "<group>";
+		};
+		C3CDE1A0299F3C7A0089DEC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1AC299F3C7A0089DEC0 /* TypeAliases.swift */,
+				C3CDE1A1299F3C7A0089DEC0 /* UI */,
+				C3CDE1A4299F3C7A0089DEC0 /* Audio */,
+				C3CDE1A9299F3C7A0089DEC0 /* MIDI */,
+				C3CDE1AE299F3C7A0089DEC0 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C3CDE1A1299F3C7A0089DEC0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1A2299F3C7A0089DEC0 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C3CDE1A4299F3C7A0089DEC0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1A5299F3C7A0089DEC0 /* Synth.aif */,
+				C3CDE1A7299F3C7A0089DEC0 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C3CDE1A9299F3C7A0089DEC0 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1AA299F3C7A0089DEC0 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		C3CDE1AE299F3C7A0089DEC0 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1AF299F3C7A0089DEC0 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		C3CDE1B1299F3C7A0089DEC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1B2299F3C7A0089DEC0 /* AudioUnitHostModel.swift */,
+				C3CDE1B4299F3C7A0089DEC0 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3CDE1B8299F3C7A0089DEC0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1B9299F3C7A0089DEC0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3CDE1C5299F3C7E0089DEC0 /* SoundScapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1C6299F3C7E0089DEC0 /* SoundScapeTests.swift */,
+			);
+			path = SoundScapeTests;
+			sourceTree = "<group>";
+		};
+		C3CDE1CF299F3C7E0089DEC0 /* SoundScapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1D0299F3C7E0089DEC0 /* SoundScapeUITests.swift */,
+				C3CDE1D2299F3C7E0089DEC0 /* SoundScapeUITestsLaunchTests.swift */,
+			);
+			path = SoundScapeUITests;
+			sourceTree = "<group>";
+		};
+		C3CDE1DC299F3C7E0089DEC0 /* SoundScapeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1DD299F3C7E0089DEC0 /* README.md */,
+				C3CDE207299F3C7E0089DEC0 /* Info.plist */,
+				C3CDE1DF299F3C7E0089DEC0 /* Common */,
+				C3CDE1F2299F3C7E0089DEC0 /* Parameters */,
+				C3CDE1F6299F3C7E0089DEC0 /* DSP */,
+				C3CDE1F9299F3C7E0089DEC0 /* UI */,
+			);
+			path = SoundScapeExtension;
+			sourceTree = "<group>";
+		};
+		C3CDE1DF299F3C7E0089DEC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1E0299F3C7E0089DEC0 /* SoundScapeExtension-Bridging-Header.h */,
+				C3CDE1E1299F3C7E0089DEC0 /* Parameters */,
+				C3CDE1E4299F3C7E0089DEC0 /* Utility */,
+				C3CDE1E9299F3C7E0089DEC0 /* Audio Unit */,
+				C3CDE1ED299F3C7E0089DEC0 /* DSP */,
+				C3CDE1FE299F3C7E0089DEC0 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C3CDE1E1299F3C7E0089DEC0 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1E2299F3C7E0089DEC0 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		C3CDE1E4299F3C7E0089DEC0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1E5299F3C7E0089DEC0 /* CrossPlatform.swift */,
+				C3CDE1E7299F3C7E0089DEC0 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C3CDE1E9299F3C7E0089DEC0 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1EA299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.h */,
+				C3CDE1EB299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		C3CDE1ED299F3C7E0089DEC0 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1EE299F3C7E0089DEC0 /* SoundScapeExtensionAUProcessHelper.hpp */,
+				C3CDE1F0299F3C7E0089DEC0 /* SoundScapeExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		C3CDE1F2299F3C7E0089DEC0 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1F3299F3C7E0089DEC0 /* SoundScapeExtensionParameterAddresses.h */,
+				C3CDE1F4299F3C7E0089DEC0 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		C3CDE1F6299F3C7E0089DEC0 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1F7299F3C7E0089DEC0 /* SoundScapeExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		C3CDE1F9299F3C7E0089DEC0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE1FA299F3C7E0089DEC0 /* SoundScapeExtensionMainView.swift */,
+				C3CDE1FC299F3C7E0089DEC0 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C3CDE1FE299F3C7E0089DEC0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE203299F3C7E0089DEC0 /* ObservableAUParameter.swift */,
+				C3CDE205299F3C7E0089DEC0 /* AudioUnitViewController.swift */,
+				C3CDE1FF299F3C7E0089DEC0 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C3CDE1FF299F3C7E0089DEC0 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDE200299F3C7E0089DEC0 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3CDE19A299F3C7A0089DEC0 /* SoundScape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CDE20E299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScape" */;
+			buildPhases = (
+				C3CDE197299F3C7A0089DEC0 /* Sources */,
+				C3CDE198299F3C7A0089DEC0 /* Frameworks */,
+				C3CDE199299F3C7A0089DEC0 /* Resources */,
+				C3CDE20D299F3C7E0089DEC0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3CDE1DB299F3C7E0089DEC0 /* PBXTargetDependency */,
+			);
+			name = SoundScape;
+			productName = SoundScape;
+			productReference = C3CDE19B299F3C7A0089DEC0 /* SoundScape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3CDE1C1299F3C7E0089DEC0 /* SoundScapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CDE211299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeTests" */;
+			buildPhases = (
+				C3CDE1BE299F3C7E0089DEC0 /* Sources */,
+				C3CDE1BF299F3C7E0089DEC0 /* Frameworks */,
+				C3CDE1C0299F3C7E0089DEC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3CDE1C4299F3C7E0089DEC0 /* PBXTargetDependency */,
+			);
+			name = SoundScapeTests;
+			productName = SoundScapeTests;
+			productReference = C3CDE1C2299F3C7E0089DEC0 /* SoundScapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3CDE1CB299F3C7E0089DEC0 /* SoundScapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CDE214299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeUITests" */;
+			buildPhases = (
+				C3CDE1C8299F3C7E0089DEC0 /* Sources */,
+				C3CDE1C9299F3C7E0089DEC0 /* Frameworks */,
+				C3CDE1CA299F3C7E0089DEC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3CDE1CE299F3C7E0089DEC0 /* PBXTargetDependency */,
+			);
+			name = SoundScapeUITests;
+			productName = SoundScapeUITests;
+			productReference = C3CDE1CC299F3C7E0089DEC0 /* SoundScapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C3CDE1D7299F3C7E0089DEC0 /* SoundScapeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CDE20A299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeExtension" */;
+			buildPhases = (
+				C3CDE1D4299F3C7E0089DEC0 /* Sources */,
+				C3CDE1D5299F3C7E0089DEC0 /* Frameworks */,
+				C3CDE1D6299F3C7E0089DEC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundScapeExtension;
+			productName = SoundScapeExtension;
+			productReference = C3CDE1D8299F3C7E0089DEC0 /* SoundScapeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3CDE193299F3C7A0089DEC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C3CDE19A299F3C7A0089DEC0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C3CDE1C1299F3C7E0089DEC0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C3CDE19A299F3C7A0089DEC0;
+					};
+					C3CDE1CB299F3C7E0089DEC0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C3CDE19A299F3C7A0089DEC0;
+					};
+					C3CDE1D7299F3C7E0089DEC0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C3CDE196299F3C7A0089DEC0 /* Build configuration list for PBXProject "SoundScape" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3CDE192299F3C7A0089DEC0;
+			productRefGroup = C3CDE19C299F3C7A0089DEC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3CDE19A299F3C7A0089DEC0 /* SoundScape */,
+				C3CDE1C1299F3C7E0089DEC0 /* SoundScapeTests */,
+				C3CDE1CB299F3C7E0089DEC0 /* SoundScapeUITests */,
+				C3CDE1D7299F3C7E0089DEC0 /* SoundScapeExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3CDE199299F3C7A0089DEC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1BA299F3C7A0089DEC0 /* Preview Assets.xcassets in Resources */,
+				C3CDE1BC299F3C7D0089DEC0 /* Assets.xcassets in Resources */,
+				C3CDE1A6299F3C7A0089DEC0 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1C0299F3C7E0089DEC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1CA299F3C7E0089DEC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1D6299F3C7E0089DEC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1F8299F3C7E0089DEC0 /* SoundScapeExtensionDSPKernel.hpp in Resources */,
+				C3CDE202299F3C7E0089DEC0 /* AudioUnitViewController.xib in Resources */,
+				C3CDE1F1299F3C7E0089DEC0 /* SoundScapeExtensionBufferedAudioBus.hpp in Resources */,
+				C3CDE1DE299F3C7E0089DEC0 /* README.md in Resources */,
+				C3CDE1EF299F3C7E0089DEC0 /* SoundScapeExtensionAUProcessHelper.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3CDE197299F3C7A0089DEC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1B3299F3C7A0089DEC0 /* AudioUnitHostModel.swift in Sources */,
+				C3CDE1B5299F3C7A0089DEC0 /* AudioUnitViewModel.swift in Sources */,
+				C338D46229A7D485009279AE /* Preset.swift in Sources */,
+				C3CDE19F299F3C7A0089DEC0 /* ContentView.swift in Sources */,
+				C3CDE1A3299F3C7A0089DEC0 /* ViewControllerRepresentable.swift in Sources */,
+				C3CDE1B7299F3C7A0089DEC0 /* SoundScapeApp.swift in Sources */,
+				C3CDE1B0299F3C7A0089DEC0 /* StringHelpers.swift in Sources */,
+				C3CDE1AB299F3C7A0089DEC0 /* MIDIManager.swift in Sources */,
+				C3CDE1AD299F3C7A0089DEC0 /* TypeAliases.swift in Sources */,
+				C338D46429A7D4DA009279AE /* AudioSource.swift in Sources */,
+				C3CDE1A8299F3C7A0089DEC0 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1BE299F3C7E0089DEC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1C7299F3C7E0089DEC0 /* SoundScapeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1C8299F3C7E0089DEC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1D1299F3C7E0089DEC0 /* SoundScapeUITests.swift in Sources */,
+				C3CDE1D3299F3C7E0089DEC0 /* SoundScapeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CDE1D4299F3C7E0089DEC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDE1F5299F3C7E0089DEC0 /* Parameters.swift in Sources */,
+				C3CDE1E3299F3C7E0089DEC0 /* ParameterSpecBase.swift in Sources */,
+				C3CDE204299F3C7E0089DEC0 /* ObservableAUParameter.swift in Sources */,
+				C3CDE1E6299F3C7E0089DEC0 /* CrossPlatform.swift in Sources */,
+				C3CDE1E8299F3C7E0089DEC0 /* String+Utils.swift in Sources */,
+				C3CDE206299F3C7E0089DEC0 /* AudioUnitViewController.swift in Sources */,
+				C3CDE1FD299F3C7E0089DEC0 /* ParameterSlider.swift in Sources */,
+				C3CDE1FB299F3C7E0089DEC0 /* SoundScapeExtensionMainView.swift in Sources */,
+				C3CDE1EC299F3C7E0089DEC0 /* SoundScapeExtensionAudioUnit.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3CDE1C4299F3C7E0089DEC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CDE19A299F3C7A0089DEC0 /* SoundScape */;
+			targetProxy = C3CDE1C3299F3C7E0089DEC0 /* PBXContainerItemProxy */;
+		};
+		C3CDE1CE299F3C7E0089DEC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CDE19A299F3C7A0089DEC0 /* SoundScape */;
+			targetProxy = C3CDE1CD299F3C7E0089DEC0 /* PBXContainerItemProxy */;
+		};
+		C3CDE1DB299F3C7E0089DEC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CDE1D7299F3C7E0089DEC0 /* SoundScapeExtension */;
+			targetProxy = C3CDE1DA299F3C7E0089DEC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3CDE200299F3C7E0089DEC0 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CDE201299F3C7E0089DEC0 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3CDE208299F3C7E0089DEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3CDE209299F3C7E0089DEC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C3CDE20B299F3C7E0089DEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundScapeExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundScapeExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScape.SoundScapeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundScapeExtension/Common/SoundScapeExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3CDE20C299F3C7E0089DEC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoundScapeExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundScapeExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScape.SoundScapeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundScapeExtension/Common/SoundScapeExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C3CDE20F299F3C7E0089DEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundScape/SoundScape.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SoundScape/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundScape;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3CDE210299F3C7E0089DEC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SoundScape/SoundScape.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SoundScape/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SoundScape;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C3CDE212299F3C7E0089DEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundScape.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoundScape";
+			};
+			name = Debug;
+		};
+		C3CDE213299F3C7E0089DEC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundScape.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoundScape";
+			};
+			name = Release;
+		};
+		C3CDE215299F3C7E0089DEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SoundScape;
+			};
+			name = Debug;
+		};
+		C3CDE216299F3C7E0089DEC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mje.SoundScapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SoundScape;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3CDE196299F3C7A0089DEC0 /* Build configuration list for PBXProject "SoundScape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDE208299F3C7E0089DEC0 /* Debug */,
+				C3CDE209299F3C7E0089DEC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDE20A299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDE20B299F3C7E0089DEC0 /* Debug */,
+				C3CDE20C299F3C7E0089DEC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDE20E299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDE20F299F3C7E0089DEC0 /* Debug */,
+				C3CDE210299F3C7E0089DEC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDE211299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDE212299F3C7E0089DEC0 /* Debug */,
+				C3CDE213299F3C7E0089DEC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDE214299F3C7E0089DEC0 /* Build configuration list for PBXNativeTarget "SoundScapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDE215299F3C7E0089DEC0 /* Debug */,
+				C3CDE216299F3C7E0089DEC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3CDE193299F3C7A0089DEC0 /* Project object */;
+}
