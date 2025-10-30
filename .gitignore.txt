@@ -1,4 +1,3 @@
-/libs/
-libs/
-libs/JUCE/
-libs/Cinder/
+/build/
+/bin/
+/obj/
