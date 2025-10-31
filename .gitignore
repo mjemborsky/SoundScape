@@ -4,3 +4,5 @@
 /SoundScape/Builds
 SoundScape/SoundScape.jucer
 /SoundScape/JuceLibraryCode
+/SoundScape/Builds/VisualStudio2022
+SoundScape/JuceLibraryCode/JuceHeader.h
