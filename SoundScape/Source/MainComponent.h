@@ -1,27 +1,26 @@
 #pragma once
-
 #include <JuceHeader.h>
+#include "AudioEngine.h"
 
-//==============================================================================
-/*
-    This component lives inside our window, and this is where you should put all
-    your controls and content.
-*/
-class MainComponent  : public juce::Component
+class MainComponent : public juce::Component, private juce::Slider::Listener
 {
 public:
-    //==============================================================================
     MainComponent();
     ~MainComponent() override;
 
-    //==============================================================================
-    void paint (juce::Graphics&) override;
+    void paint(juce::Graphics&) override;
     void resized() override;
 
 private:
-    //==============================================================================
-    // Your private member variables go here...
+    void sliderValueChanged(juce::Slider* slider) override;
 
+    juce::Slider gainSlider;
+    juce::Label gainLabel;
+    AudioEngine audioEngine;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
+    // Declare the buttons as member variables
+    juce::TextButton startButton;
+    juce::TextButton stopButton;
+
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainComponent)
 };
