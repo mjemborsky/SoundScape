@@ -1,40 +1,72 @@
-# Ignore build directories
-/build/
+# =========================================================
+# Global Ignore Rules for SoundScape GitHub Backup
+# =========================================================
+
+# 🔒 Ignore libraries outside project scope
+# (Note: libs is one level up from repo root, so not tracked anyway)
+../libs/
+
+# 🧱 Ignore build outputs
+build/
 */build/
 bin/
 obj/
-out/
 Debug/
 Release/
+x64/
+x86/
 
-# Ignore libraries
-libs/
-third_party/
-dependencies/
-
-# Ignore compiled files
-*.dll
-*.exe
-*.so
-*.dylib
-*.a
-*.lib
-*.obj
+# ⚙️ Ignore Visual Studio generated files
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
 *.pdb
+*.idb
+*.ilk
+*.cachefile
 
-# Ignore system or IDE-specific files
-*.DS_Store
+# 🧩 Ignore compiler/intermediate files
+*.exe
+*.dll
+*.lib
+*.a
+*.obj
+*.pch
+*.tmp
+*.log
+*.dmp
+
+# 💻 Ignore IDE / Editor metadata
 .vscode/
 .idea/
-*.sln
-*.vcxproj*
-*.xcodeproj
-*.user
-*.log
+*.swp
+*.bak
+*.orig
 
-# Allow source and config files
-!src/
-!Source/
+# 🪞 Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ✅ Keep source and project files
+!SoundScape/
+!SoundScape/src/
+!SoundScape/Source/
+!SoundScape/**/*.cpp
+!SoundScape/**/*.h
+!SoundScape/**/*.hpp
+!SoundScape/**/*.c
+!SoundScape/**/*.cc
+!SoundScape/**/*.inl
+!SoundScape/*.sln
+!SoundScape/*.vcxproj*
 !CMakeLists.txt
 !README.md
 !LICENSE
