@@ -1,2 +1,0 @@
-/SoundScape/Builds/
-/SoundScape/JuceLibraryCode
