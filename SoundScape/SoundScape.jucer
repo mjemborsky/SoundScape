@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="SxVRha" name="SoundScape" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="gHc4RW" name="SoundScape">
+    <GROUP id="{6CA7AFAC-C01D-8CDB-1228-ACEB891921AD}" name="Source">
+      <FILE id="lipKaA" name="AudioEngine.h" compile="0" resource="0" file="Source/AudioEngine.h"/>
+      <FILE id="xuOjiz" name="AudioEngine.cpp" compile="1" resource="0" file="Source/AudioEngine.cpp"/>
+      <FILE id="jZcZ2C" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="EItvGo" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="aIxZFf" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_animation" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SoundScape"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SoundScape"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_animation" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../libs/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

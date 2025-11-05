@@ -34,6 +34,7 @@ dependencies/
 
 # Allow source and config files
 !src/
+!Source/
 !CMakeLists.txt
 !README.md
 !LICENSE
