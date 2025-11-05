@@ -1,0 +1,39 @@
+# Ignore build directories
+/build/
+*/build/
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# Ignore libraries
+libs/
+third_party/
+dependencies/
+
+# Ignore compiled files
+*.dll
+*.exe
+*.so
+*.dylib
+*.a
+*.lib
+*.obj
+*.pdb
+
+# Ignore system or IDE-specific files
+*.DS_Store
+.vscode/
+.idea/
+*.sln
+*.vcxproj*
+*.xcodeproj
+*.user
+*.log
+
+# Allow source and config files
+!src/
+!CMakeLists.txt
+!README.md
+!LICENSE
