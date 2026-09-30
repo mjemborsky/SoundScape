@@ -52,7 +52,24 @@ v
 ---
 
 ## Next Steps & Development
-* **C++ Proof of Concept:** Build minimal C++ host applications testing per-PID WASAPI loopback capture on Windows and `libpipewire` graph node tapping on Linux.
-* **JUCE Integration:** Implement custom `juce::AudioSource` and `juce::AudioProcessor` wrappers to pipe external process buffers directly into a multi-channel JUCE audio graph.
-* **Spatialization Physics:** Integrate Steam Audio SDK to calculate HRTF filtering and distance-based reverb responses based on node coordinate vectors on the visual stage.
-* **Canvas Development:** Design the interactive GUI using JUCE's vector graphics and `juce::OpenGLContext` for interactive 2D/3D app placement.
+
+# Phase 1: OS Interceptor & Loopback Proof of Concept (Week 1)
+* [ ] **Windows WASAPI Loopback Engine:** Build C++ test harness utilizing `ActivateAudioInterfaceAsync` and `AUDCLNT_PROCESS_LOOPBACK_PARAMS` to isolate specific process IDs (PIDs).
+* [ ] **OS Session Muting:** Test session suppression via `ISimpleAudioVolume` to prevent dry audio leakage.
+* [ ] **Linux PipeWire Engine:** Write C API script targeting `libpipewire` to tap and re-route granular application graph nodes.
+* [ ] **PulseAudio Fallback:** Add `libpulse` monitor sink creation for legacy Linux system support.
+
+## Phase 2: JUCE Audio Graph Engine (Week 2)
+* [ ] **Custom Audio Source Wrappers:** Implement `juce::AudioSource` and `juce::AudioProcessor` modules to ingest external process PCM buffers.
+* [ ] **Multi-Channel Routing Architecture:** Construct dynamic `juce::AudioProcessorGraph` allowing nodes to be added/removed on the fly.
+* [ ] **Buffer & Thread Sync:** Build lock-free ring buffers to pass captured OS streams into JUCE's high-priority audio callback thread without drops.
+
+## Phase 3: Spatialization Physics & DSP (Week 3)
+* [ ] **Spatial SDK Integration:** Integrate Steam Audio SDK / Google Resonance Audio into the JUCE audio pipeline.
+* [ ] **HRTF & Attenuation Calculation:** Implement distance-based volume roll-off and angle/elevation-based HRTF panning algorithms.
+* [ ] **Acoustic Environment Modeling:** Add dynamic room impulse responses for reverb tail and spatial reflections based on virtual room dimensions.
+
+## Phase 4: Virtual Stage UI & Visual Canvas (Week 4)
+* [ ] **Interactive 2D/3D Canvas:** Build interactive virtual room GUI using JUCE vector graphics and `juce::OpenGLContext`.
+* [ ] **Node Physics & Interaction:** Implement draggable process nodes mapped to coordinate vectors fed directly into the DSP engine.
+* [ ] **State Persistence:** Utilize `juce::ValueTree` to save and restore user room layouts, process mappings, and DSP presets.
